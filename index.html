@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Моя визитка</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="images/me.jpg" alt="Мое фото" width="150">
+        <h1>Йосып</h1>
+        <p>Начинающий веб-разработчик</p>
+        <button id="theme-btn">Тема</button>
+    </header>
+    <main>
+        <section>
+            <h2 >Обо мне</h2>
+            <p>Здарова, Я Йосып, начинающий веб-разработчик. Я бывший квартирант, а также одноклассник который шёл со всеми на водопой</p>
+        </section>
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Знаю путь на водопой</li>
+                <li>Однокласник</li>
+                <li>Бывший квартирант</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Контакты</h2>
+            <p>DISCORD: Йосып</p>
+        </section>
+    </main>
+<footer>
+    <p>&copy; 2026 Йосып. Все права защищены.</p>
+</footer>
+<script>
+    const btn = document.getElementById('theme-btn');
+    btn.addEventListener('click', () => {
+        document.body.classList.toggle('dark');
+    });
+</script>
+</body>
+</html>
